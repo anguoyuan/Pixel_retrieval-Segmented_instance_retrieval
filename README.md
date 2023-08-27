@@ -6,7 +6,7 @@ Pixel retrieval, often referred to as segmented instance retrieval, is a new tas
 
 ## Comparison with Image Retrieval and Segmentation
 
-Pixel retrieval can be viewed as an advanced form of image retrieval, providing insights into which specific pixels correlate with the query object. When juxtaposed with semantic and instance segmentation, pixel retrieval demands a nuanced recognition capability for targets of varying granularity. For a comprehensive understanding, please refer to our [research paper](file://143.248.137.136/Web/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf).
+Pixel retrieval can be viewed as an advanced form of image retrieval, providing insights into which specific pixels correlate with the query object. When juxtaposed with semantic and instance segmentation, pixel retrieval demands a nuanced recognition capability for targets of varying granularity. For a comprehensive understanding, please refer to our [research paper](https://143.248.137.136/Web/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf).
 
 ## User-Study Insights
 
@@ -23,7 +23,7 @@ We're excited to present the first two pixel retrieval benchmarks: **PROxford** 
 
 ## Access the Dataset
 
-You can download the images along with their pixel-level labels [here](file://143.248.137.136/Web/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
+You can download the images along with their pixel-level labels [here](https://143.248.137.136/Web/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
 
 # Challenges in Pixel Retrieval
 
