@@ -1,19 +1,38 @@
-# Content-based pixel retrieval
-Pixel retrieval, or segmented instance retrieval, is a new computer vision task; it requires searching pixels that depict the query object from the database. More specifically, it requires the machine to recognize, localize, and segment the query object in database images in run time. It is the pixel-level and instance-level recognition task, as shown in the figure below.
-![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/ae1aa937-0923-4b44-b330-b7010eb28945)
-## Compare with image retrieval and segmentation.
-Pixel retrieval is an extension of image retrieval and offers information about which pixels are related to the query object. Compared with semantic and instance segmentation, pixel retrieval requires a fine-grained recognition capability for variable-granularity targets. Please take a look at our paper for a more detailed explanation. 
-## Try the user-study
-Pixel retrieval is a practical task. Our user study results show pixel-level annotation during retrieval can significantly improve the user experience. Try our user-study from [this link](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
+# Content-based Pixel Retrieval
 
-# The first two pixel retrieval benchmarks
-We introduce the first two pixel retrieval benchmarks named PROxford and PRParis, which are based on the widely used image retrieval datasets, ROxford and RParis. There are several benefits of building new pixel retrieval benchmarks based on the famous ROxford and RParis: 1) Landmarks have great business value; imagine how many figures in your album are about landmarks; 2) It narrows the gap for the image retrieval community to adopt this new task; 3) It is notoriously difficult and each query has up to hundreds positive images, proper to test the instance-level recognition as the benchmark; 4) It has high-quality annotation and can be used to compare human and machine recognition performance. 
-## Download dataset
-Images and their pixel-level label can be downloaded from this link.
+Pixel retrieval, often referred to as segmented instance retrieval, is a new task within computer vision. The primary objective is to identify pixels that represent a specific query object within a database. This involves the machine's ability to recognize, localize, and segment the query object in database images in real-time. Essentially, it's a pixel-level and instance-level recognition task, as illustrated in the figure below:
 
-# Pixel retrieval is difficult.
-Our extensive experiment results show that the pixel retrieval task is challenging and distinctive from existing problems, suggesting that further research can advance the content-based pixel retrieval and, thus, user search experience. 
-## Test baselines
-We will open the code and settings to reproduce the result table soon. 
+![Pixel Retrieval Image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/ae1aa937-0923-4b44-b330-b7010eb28945)
 
-# Possible directions
+## Comparison with Image Retrieval and Segmentation
+
+Pixel retrieval can be viewed as an advanced form of image retrieval, providing insights into which specific pixels correlate with the query object. When juxtaposed with semantic and instance segmentation, pixel retrieval demands a nuanced recognition capability for targets of varying granularity. For a comprehensive understanding, please refer to our [research paper](#paper-link).
+
+## User-Study Insights
+
+Pixel retrieval is not just a theoretical concept; it has practical implications. Our user study indicates that pixel-level annotations during the retrieval process can notably enhance user experience. Engage with our user-study through [this link](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
+
+# Introducing Pixel Retrieval Benchmarks
+
+We're excited to present the first two pixel retrieval benchmarks: **PROxford** and **PRParis**. These are built upon the renowned image retrieval datasets, ROxford and RParis. Opting for these datasets offers several advantages:
+
+1. **Relevance to Landmarks**: Landmarks are of immense business value. Consider the number of photos in your collection that feature landmarks.
+2. **Familiarity**: Utilizing well-known datasets like ROxford and RParis makes it easier for the image retrieval community to transition to this new task.
+3. **Complexity**: The task is inherently challenging. Each query can have hundreds of positive images, making it ideal for testing instance-level recognition.
+4. **Quality**: The annotations are of high caliber, facilitating comparisons between human and machine recognition performance.
+
+## Access the Dataset
+
+You can download the images along with their pixel-level labels [here](#download-link).
+
+# Challenges in Pixel Retrieval
+
+Our comprehensive experiments highlight the inherent challenges of the pixel retrieval task. It stands apart from existing challenges, indicating that there's ample scope for research to enhance content-based pixel retrieval and, by extension, the user search experience.
+
+## Upcoming Baselines
+
+Stay tuned! We'll soon release the code and configurations to replicate our results.
+
+# Future Directions
+
+[Our insights or directions for future research or developments in this section.]
