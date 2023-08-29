@@ -1,4 +1,4 @@
-This is the official release of the pixel retrieval benchmarks PRoxford and PRparis of the ICCV 23 paper 'Towards Content-based Pixel Retrieval in Revisited Oxford and Paris'. 
+This is the official release of the pixel retrieval benchmarks PRoxford and PRparis, which are introduced in the ICCV 23 paper 'Towards Content-based Pixel Retrieval in Revisited Oxford and Paris'. 
 
 # Access the benchmarks
 
