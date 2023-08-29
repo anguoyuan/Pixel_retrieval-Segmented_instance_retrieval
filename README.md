@@ -6,7 +6,7 @@ This is the official release of the pixel retrieval benchmarks PRoxford and PRpa
 2. We provide an example result of 'sift sp' as a demo. Download it from this [link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/results.rar).
 3. Run miou.py in the evaluation_code directory to get mious for each query.
 4. Run mAP@k.py in the evaluation_code directory to get the final mAP@k.
-5. 
+   
 We are still refining this evaluation code. 
 
 
