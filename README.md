@@ -1,3 +1,14 @@
+This is the official release of the pixel retrieval benchmarks PRoxford and PRparis of the ICCV 23 paper 'Towards Content-based Pixel Retrieval in Revisited Oxford and Paris'. 
+
+# Access the benchmarks
+
+1. Download our pixel-level labels [here](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
+2. We provide an example result of 'sift sp' as a demo. Download it from this [link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/results.rar).
+3. Run miou.py in the evaluation_code directory to get mious for each query.
+4. Run mAP@k.py in the evaluation_code directory to get the final mAP@k.
+We are still refining this code. 
+
+
 # Content-based Pixel Retrieval
 
 Pixel retrieval, or segmented instance retrieval, is a new task within computer vision. The primary objective is to identify pixels that represent a specific query object within a database. This involves the machine's ability to recognize, localize, and segment the query object in database images in real-time. Essentially, it's a pixel-level and instance-level recognition task, as illustrated in the figure below:
@@ -21,9 +32,7 @@ We're excited to present the first two pixel retrieval benchmarks: **PROxford** 
 3. **Complexity**: The task is inherently challenging. Each query can have hundreds of positive images, making it ideal for testing instance-level recognition.
 4. **Quality**: The annotations are of high caliber, facilitating comparisons between human and machine recognition performance.
 
-## Access the Dataset
 
-You can download the images along with their pixel-level labels [here](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
 
 # Challenges in Pixel Retrieval
 
