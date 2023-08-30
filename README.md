@@ -1,5 +1,5 @@
 
-<img src="https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/6c9cc2f4-58e1-4fe6-a97c-bfb173479f16" width="200" height="200">
+<img src="https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/6c9cc2f4-58e1-4fe6-a97c-bfb173479f16" width="200" height="100" align="middle">
 
 
 # Official Release: Pixel Retrieval Benchmarks PRoxford and PRparis 
