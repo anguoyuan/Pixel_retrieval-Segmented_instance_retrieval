@@ -1,13 +1,38 @@
-This is the official release of the pixel retrieval benchmarks PRoxford and PRparis, which are introduced in the ICCV 23 paper 'Towards Content-based Pixel Retrieval in Revisited Oxford and Paris'. 
+# Official Release: Pixel Retrieval Benchmarks PRoxford and PRparis
 
-# Access the benchmarks
+We are pleased to announce the official release of the pixel retrieval benchmarks PRoxford and PRparis. These benchmarks are introduced in our ICCV 23 paper, "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris."
 
-1. Download our pixel-level labels [here](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
-2. We provide an example result of 'sift sp' as a demo. Download it from this [link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/results.rar).
-3. Run miou.py in the evaluation_code directory to get mious for each query.
-4. Run mAP@k.py in the evaluation_code directory to get the final mAP@k.
+## Accessing the Benchmarks
+
+### Prerequisites
+
+1. **Download Pixel-Level Labels**: Download and extract our pixel-level labels from [here](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
    
-We are still refining this evaluation code. 
+2. **Download Example Result**: We provide an example result using the 'sift sp' method. Download and extract it from [this link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/results.rar).
+
+### Evaluation Steps
+
+1. Run `miou.py` in the `evaluation_code` directory to get mIoUs for each query.
+   
+2. Run `mAP@k.py` in the `evaluation_code` directory to get the final mAP@k.
+
+### Testing Your Own Method
+
+To test your own method, named 'ABC':
+- Save the image-level and pixel-level results in `results/image-level/ABC` and `results/pixel-level/ABC/matching_result`, respectively.
+- Modify the method name in `miou.py` and `mAP@k.py`. Run them.
+
+### Directory Structure
+
+Your directory structure should be as follows:
+-- pixel_retrieval-Segmented_instance_retrieval
+|-- pixel_retrieval_benchmarks
+|-- evaluation_code
+|-- results
+
+> **Note**: We are still refining this evaluation code.
+
+
 
 
 # Content-based Pixel Retrieval
