@@ -69,10 +69,6 @@ We're excited to present the first two pixel retrieval benchmarks: **PROxford** 
 
 Our comprehensive experiments highlight the inherent challenges of the pixel retrieval task. It stands apart from existing challenges, indicating that there's ample scope for research to enhance content-based pixel retrieval and, by extension, the user search experience.
 
-## Upcoming Baselines
-
-Stay tuned! We'll soon release the code and configurations to replicate our results.
-
 # Future Directions
 
 [Our insights or directions for future research or developments.]
