@@ -34,7 +34,8 @@ Your directory structure should be as follows:
 
 |-- results
 
-> **Note**: We are still refining this evaluation code.
+> **Note**: We are still refining this evaluation code. If you encounter any issues while using it, please let us know. We also plan to release configurations and code to help readers replicate the results presented in our paper. Stay tuned for updates.
+
 
 
 
