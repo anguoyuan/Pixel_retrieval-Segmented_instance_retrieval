@@ -7,6 +7,10 @@
 
 We are pleased to announce the official release of the pixel retrieval benchmarks PRoxford and PRparis. These benchmarks are introduced in our ICCV 23 paper, "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris."
 
+## Play with our user-study
+
+Pixel retrieval is not just a theoretical concept; it has practical implications. Our user study indicates that pixel-level annotations during the retrieval process can notably enhance user experience. Engage with our user-study through [this link](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
+
 ## Accessing the Benchmarks
 
 ### Prerequisites
@@ -55,9 +59,6 @@ Pixel retrieval, or segmented instance retrieval, is a new task within computer 
 
 Pixel retrieval can be viewed as an advanced form of image retrieval, providing insights into which specific pixels correlate with the query object. When juxtaposed with semantic and instance segmentation, pixel retrieval demands a nuanced recognition capability for targets of varying granularity. For a comprehensive understanding, please refer to our [research paper](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf).
 
-## User-Study Insights
-
-Pixel retrieval is not just a theoretical concept; it has practical implications. Our user study indicates that pixel-level annotations during the retrieval process can notably enhance user experience. Engage with our user-study through [this link](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
 
 # Introducing Pixel Retrieval Benchmarks
 
