@@ -7,7 +7,7 @@
 
 We are pleased to announce the official release of the pixel retrieval benchmarks PRoxford and PRparis. These benchmarks are introduced in our ICCV 23 paper, "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris."
 
-## Play with Our User-Study
+## Try Out Our User Study
 
 Pixel retrieval is not just a theoretical concept; it has practical implications. Our user study indicates that pixel-level annotations during the retrieval process can notably enhance user experience. Engage with our user-study through [this link](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
 
