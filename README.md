@@ -1,3 +1,5 @@
+![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/a19d3781-3c3f-49de-b7f4-09a09c37ab37)
+
 # Official Release: Pixel Retrieval Benchmarks PRoxford and PRparis
 
 We are pleased to announce the official release of the pixel retrieval benchmarks PRoxford and PRparis. These benchmarks are introduced in our ICCV 23 paper, "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris."
