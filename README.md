@@ -25,9 +25,13 @@ To test your own method, named 'ABC':
 ### Directory Structure
 
 Your directory structure should be as follows:
+
 -- pixel_retrieval-Segmented_instance_retrieval
+
 |-- pixel_retrieval_benchmarks
+
 |-- evaluation_code
+
 |-- results
 
 > **Note**: We are still refining this evaluation code.
