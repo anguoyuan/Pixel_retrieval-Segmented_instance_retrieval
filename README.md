@@ -7,9 +7,19 @@
 
 We are pleased to announce the official release of the pixel retrieval benchmarks PRoxford and PRparis. These benchmarks are introduced in our ICCV 23 paper, "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris."
 
-## Try Out Our User Study
+## Participate in Our User Study
 
-Pixel retrieval is not just a theoretical concept; it has practical implications. Our user study indicates that pixel-level annotations during the retrieval process can notably enhance user experience. Engage with our user-study through [this link](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
+**Challenge**: Can you identify the left query object in the right ground truth image?
+
+Traditional image-level retrieval often falls short in meeting user search requirements. For a more precise and user-centric experience, pixel-level retrieval is essential.
+
+![Query Image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/dfc800bf-5548-453d-a97c-0cfa373cdad5) ![Ground Truth Image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/ed325955-a58f-4fa1-8bd2-78bedb0abcff)
+
+Pixel retrieval isn't merely theoretical—it has tangible benefits. Our research shows that incorporating pixel-level annotations during the retrieval process significantly improves user experience.
+
+**Get Involved**: Dive into our user study and share your insights [here](https://fascinating-marzipan-a99b4c.netlify.app/bwds).
+
+
 
 ## Accessing the Benchmarks
 
