@@ -13,7 +13,7 @@ We are pleased to announce the official release of the pixel retrieval benchmark
 
 Traditional image-level retrieval often falls short in meeting user search requirements. For a more precise and user-centric experience, pixel-level retrieval is essential.
 
-![Query Image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/dfc800bf-5548-453d-a97c-0cfa373cdad5) ![Ground Truth Image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/ed325955-a58f-4fa1-8bd2-78bedb0abcff)
+<img src="https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/dfc800bf-5548-453d-a97c-0cfa373cdad5" alt="Query Image" width="45%" align="left"> <img src="https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/ed325955-a58f-4fa1-8bd2-78bedb0abcff" alt="Ground Truth Image" width="45%" align="right">
 
 Pixel retrieval isn't merely theoretical—it has tangible benefits. Our research shows that incorporating pixel-level annotations during the retrieval process significantly improves user experience.
 
