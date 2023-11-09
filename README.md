@@ -40,7 +40,7 @@ Pixel retrieval isn't merely theoretical—it has tangible benefits. Our researc
 ### Testing Your Own Method
 
 To test your own method, named 'ABC':
-- Save the image-level and pixel-level results in `results/image-level/ABC` and `results/pixel-level/ABC/matching_result`, respectively.
+- Save the image-level and pixel-level results in `results/image-level/ABC` and `results/pixel-level/ABC/matching_result`, respectively. The pixel-level result is the ranking array with shape (#db_imgs, #query_imgs). The pixel-level result is a dictionary saved using numpy, e.g., "np.save('proxford.npy', dictionary)". The dictionary key is like 'qimlist_69_imlist_1534', which means the matching result of query 69 and db 1534. Dictionary['qimlist_69_imlist_1534'] is a numpy array with shape (#boundary_keypoints, 2), recording the location (width and height) of the boundary keypoints of the segmented instance in the db_img 1534. The boundary can be either a box or a polygon. The keypoints can also contain the matching points inside the instance.   
 - Modify the method name in `miou.py` and `mAP@k.py`. Run them.
 
 ### Directory Structure
