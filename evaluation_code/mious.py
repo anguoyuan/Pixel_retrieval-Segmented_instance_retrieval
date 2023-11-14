@@ -5,7 +5,7 @@
 
 from gettext import npgettext
 import numpy as np
-from utils.path_manage import img_path,name_list,feature_path
+from utils.path_manage import name_list
 import os
 import json
 from utils.iou_compute import compute_iou
