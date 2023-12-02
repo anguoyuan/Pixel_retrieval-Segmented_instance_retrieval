@@ -27,7 +27,6 @@ Pixel retrieval isn't merely theoretical—it has tangible benefits. Our researc
 
 ### Prerequisites
 
-Our server is broken now; we are fixing it. 
 1. **Download Pixel-Level Labels**: Download and extract our pixel-level labels from [here](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/pixel_retrieval_benchmarks.rar).
    
 2. **Download Example Result**: We provide an example result using the 'sift sp' method. Download and extract it from [this link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/results.rar).
