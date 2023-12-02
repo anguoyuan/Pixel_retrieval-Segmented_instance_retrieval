@@ -31,6 +31,8 @@ Pixel retrieval isn't merely theoretical—it has tangible benefits. Our researc
    
 2. **Download Example Result**: We provide an example result using the 'sift sp' method. Download and extract it from [this link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/results.rar).
 
+3. **Revisited Oxford and Paris datasets**: As the official link of oxford and paris is not availabel now, we provide an alternative [download link](https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/revisitop.zip).
+
 ### Evaluation Steps
 
 1. Run `miou.py` in the `evaluation_code` directory to get mIoUs for each query.
