@@ -62,6 +62,71 @@ Your directory structure should be as follows:
 > **Note**: We are still refining this evaluation code. If you encounter any issues while using it, please let us know. We also plan to release configurations and code to help readers replicate the results presented in our paper. Stay tuned for updates.
 
 
+### updated testbed
+<details>
+<summary>\begin{table*}[htp]
+    \caption{Results of pixel retrieval from ground truth query-index image pairs (\% mean of mIoU) on the PROxf/PRPar datasets with both Medium and Hard evaluation protocols. D and S indicate detection and segmentation results respectively. \textbf{Bold} number indicates the best performance, and \underline{underline} indicates the second one.  
+    }
+    \label{tab:miou}
+    \centering
+    \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+    \begin{tabular}{|l | c | c | c | c | c | c | c | c| c|}
+    %\begin{tabular*}{\textwidth}{|C{0.354\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|C{0.045\textwidth}|}
+    \hline
+   \multirow{3}{*}{Method} & \multicolumn{4}{c}{Medium} & \multicolumn{4}{|c|}{Hard}& \\
+    \cline{2-10}
+     & \multicolumn{2}{c|}{PROxf}  & \multicolumn{2}{c|}{PRPar} & \multicolumn{2}{c|}{PROxf} & \multicolumn{2}{c|}{PRPar} &Average \\
+     \cline{2-10}
+          & D & S & D & S & D & S & D & S &\\
+    \hline
+    \multicolumn{10}{|c|}{ Retrieval and localization unified methods}\\
+    \hline
+        SIFT+SP~\cite{philbin2007object} &26.1  &10.9 &24.2 &9.7 &18.2  &7.3  &19.3 &7.8&15.44 \\
+        DELF+SP~\cite{Noh_2017_ICCV} & \underline{43.7} &20.0  &\textbf{40.7} &16.7 &\underline{33.2} &13.9 &32.2 &12.4&26.60 \\
+        DELG+SP~\cite{cao2020unifying} &\textbf{44.1} &19.7  &\underline{40.1} &16.5 &\textbf{34.8} &14.5 &31.2 &11.7& 26.57 \\
+        D2R~\cite{teichmann2019detect}+Resnet-50-Faster-RCNN+Mean  &20.2 &-  &29.6 &- &16.7 &-  &27.4 &-&- \\
+        D2R~\cite{teichmann2019detect}+Resnet-50-Faster-RCNN+VLAD~\cite{jegou2010aggregating} &25.8  &- &37.5 &- &21.6  &-  &\underline{35.5} &-&- \\
+        D2R~\cite{teichmann2019detect}+Resnet-50-Faster-RCNN+ASMK~\cite{tolias2016image} &26.3  &-  &38.5 &- &21.6 &- &\textbf{35.6} &-&-\\
+        D2R~\cite{teichmann2019detect}+Mobilenet-V2-SSD+Mean &19.7 &-  &25.9 & -&20.1 &-  &27.9 &-&- \\
+        D2R~\cite{teichmann2019detect}+Mobilenet-V2-SSD+VLAD~\cite{jegou2010aggregating}  &23.1 &-  &33. &- &20.9 &-  &33.6 &-&- \\
+        D2R~\cite{teichmann2019detect}+Mobilenet-V2-SSD+ASMK~\cite{tolias2016image}   &22.4 & - &34.0 &- &20.8 &-  &33.1 &-&- \\
+    \hline
+    \multicolumn{10}{|c|}{Detection methods}\\
+    \hline
+    OWL-VIT (LiT)~\cite{minderer2022simple} & 11.4 & - & 18.0 & - & 6.3 & - & 15.0 & -&- \\
+    OS2D-v2-trained~\cite{osokin20os2d} & 10.5 &-  &13.7 &- &11.7 &- &14.3 &-&-\\
+    OS2D-v1~\cite{osokin20os2d}  &7.0 &-  &8.5 &- & 8.7&-  &9.2 &-&- \\
+    OS2D-v2-init~\cite{osokin20os2d}   &13.6 &-  &15.4 &- &14.0 &-  &15.1 & -&-\\
+\hline
+    \multicolumn{10}{|c|}{Segmentation methods}\\
+    \hline
+    SSP (COCO) + ResNet50~\cite{fan2022ssp} & 19.2 & \underline{34.5} & 31.1 & \underline{48.7} & 15.1 & \underline{25.3} & 29.8 & \textbf{41.7}&30.68 \\
+     SSP (VOC) + ResNet50~\cite{fan2022ssp}  & 19.7 & 34.3 & 31.4 & \textbf{48.8} & 16.1 & \textbf{26.1} & 30.3 & \underline{40.4}&30.89 \\
+     HSNet (COCO) + ResNet50~\cite{min2021hypercorrelation} & 23.4 & 32.8 & 37.4 & 41.9 & 21.0 & 25.7 & 34.7 & 36.5&\underline{31.67} \\
+     HSNet (VOC) + ResNet50~\cite{min2021hypercorrelation} & 21.0 & 29.8 & 31.4 & 39.7 & 17.1 & 23.2 & 29.7 & 34.9&28.35 \\
+     HSNet (FSS) + ResNet50~\cite{min2021hypercorrelation} & 30.5 & \textbf{35.7} & 39.4 & 40.2 & 22.7 & 25.1 & 34.7 & 32.8&\textbf{32.64} \\
+     Mining (VOC) + ResNet50~\cite{yang2021mining} & 18.3 & 30.5 & 29.6 & 42.7 & 15.1 & 21.4 & 28.1 & 34.3&27.50 \\
+     Mining (VOC) + ResNet101~\cite{yang2021mining} & 18.1 & 28.6 & 29.5 & 40.0 & 14.2 & 20.4 & 28.2 & 34.4&26.68 \\
+     % m8  & &  & & & &  & & \\
+        \hline
+    \multicolumn{10}{|c|}{Dense matching methods}\\
+    \hline
+    GLUNet-Geometric~\cite{truong2020glu} & 18.1 & 13.2 & 22.8 & 15.2 & 7.7 & 4.6 & 13.3 & 7.8&12.84 \\
+    PDCNet-Geometric~\cite{truong2021pdc} & 29.1 & 24.0 & 30.7 & 21.9 & 20.4 & 15.7 & 20.6 & 12.6&21.87 \\
+    GOCor-GLUNet-Geometric~\cite{truong2020gocor} & 30.4 & 26.0 & 33.4 & 25.6 & 20.8 & 16.0 & 19.8 & 13.3&23.16 \\
+    WarpC-GLUNet-Geometric (megadepth)~\cite{truong2021warp} & 31.3 & 25.4 & 36.6 & 27.3 & 21.9 & 15.8& 26.4 & 17.3&25.25 \\
+    GLUNet-Semantic~\cite{truong2020glu} & 18.5 & 14.4 & 22.4 & 15.6 & 8.7 & 5.6 & 12.8 & 7.8&13.22 \\
+    WarpC-GLUNet-Semantic~\cite{truong2021warp} & 27.5 & 21.4 & 36.8 & 25.7 & 18.5 & 11.9 & 28.3 & 17.6&23.46 \\
+    
+     \hline
+
+    
+    \end{tabular}
+
+\end{table*}</summary>
+
+
+</details>
 
 
 
