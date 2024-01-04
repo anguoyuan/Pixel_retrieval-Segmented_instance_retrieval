@@ -64,7 +64,8 @@ Your directory structure should be as follows:
 
 ### updated testbed
 <details>
-<summary>\begin{table*}[htp]
+<summary>Click to expand LaTeX code</summary>
+\begin{table*}[htp]
     \caption{Results of pixel retrieval from ground truth query-index image pairs (\% mean of mIoU) on the PROxf/PRPar datasets with both Medium and Hard evaluation protocols. D and S indicate detection and segmentation results respectively. \textbf{Bold} number indicates the best performance, and \underline{underline} indicates the second one.  
     }
     \label{tab:miou}
@@ -120,10 +121,9 @@ Your directory structure should be as follows:
     
      \hline
 
-    
     \end{tabular}
+\end{table*}
 
-\end{table*}</summary>
 
 
 </details>
