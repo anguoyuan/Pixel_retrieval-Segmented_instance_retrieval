@@ -69,7 +69,8 @@ We add the query overhead of some representative methods for pixel retrieval per
 
 Upon meticulous review of the evaluation process, we discovered that there was an error in the outcome of the spatial verification; the results of the other methods are correct. Specifically, the format for the boundary point coordinates should be in the order of (width, height), not (height, width). We updated the testbed below. Notably, when using DELF or DELG features, spatial verification demonstrates highly accurate pixel retrieval results.
 
-![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/6e339cc8-4326-4c55-8871-ac9a50d9c6d6)
+![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/d83032bd-08a5-4349-9d35-d563275976b4)
+
 
 
 ![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/8cbe6a1b-8e19-49db-af62-c32e82be69db)
@@ -94,11 +95,11 @@ Upon meticulous review of the evaluation process, we discovered that there was a
     \multicolumn{2}{|c|}{\multirow{2}{*}{}} & \multicolumn{2}{c|}{PROxf} & \multicolumn{2}{c|}{PROxf+R1M} & \multicolumn{2}{c|}{PRPar} & \multicolumn{2}{c|}{PRPar+R1M} &\cellcolor{green}  \\ \cline{1-10}
          \multicolumn{2}{|l|}{}& M & H & M & H & M & H & M & H&\cellcolor{green}   \\ \cline{1-10}\cline{1-10}
         \multicolumn{10}{|c|}{  Image retrieval: DELG initial ranking~\cite{cao2020unifying} + HD reranking~\cite{an2021hypergraph}}&\multirow{-3}{*}{\cellcolor{green} \parbox{0.08\textwidth}{Overhead per 100 pairs}} \\ \hline
-        \multirow{6}{*}{ \makecell[c]{Pixel \\retrieval \\methods}}& DELG + SP~\cite{cao2020unifying} &\textbf{\textcolor{red}{39.6}}  &30.5  &\textbf{\textcolor{red}{36.0}} &28.2 &34.8  &20.2  &34.7 &19.5&41.22s  \\
+        \multirow{6}{*}{ \makecell[c]{Pixel \\retrieval \\methods}}& DELG + SP~\cite{cao2020unifying} &\textbf{\textcolor{red}{39.6}}  &\textbf{30.5}  &\textbf{\textcolor{red}{36.0}} &28.2 &\textbf{34.8}  &20.2  &\textbf{34.7} &19.5&41.22s  \\
          &D2R+Faster-RCNN+ASMK~\cite{teichmann2019detect} &30.1  &23.5 &30.5 &22.0 &26.3  &25.3  &25.7 &24.9& 0.11 s\\
          &OWL-VIT~\cite{minderer2022simple}  &12.3  &6.6 &12.1 &13.6 &7.9  & 7.6 &7.9 &7.8& 296.21s \\
-         &SSP~\cite{fan2022ssp}  & \textbf{33.0} &29.7  &\textbf{35.7} &30.5 & \textbf{\textcolor{red}{46.4}} &\textbf{37.2}  &\textbf{\textcolor{red}{45.6}} &\textbf{37.2} & 62.33 s\\
-         &WarpCGLUNet~\cite{truong2021warp}  & 31.2 &\textbf{32.6}  &31.5 &\textbf{31.7} &34.1  &27.3  & 34.3&28.1& 181.64s\\ 
+         &SSP~\cite{fan2022ssp}  & \textbf{33.0} &29.7  &\textbf{35.7} &\textbf{30.5} & \textbf{\textcolor{red}{46.4}} &\textbf{\textcolor{red}{37.2}}  &\textbf{\textcolor{red}{45.6}} &\textbf{\textcolor{red}{37.2}} & 62.33 s\\
+         &WarpCGLUNet~\cite{truong2021warp}  & 31.2 &\textbf{\textcolor{red}{32.6}}  &31.5 &\textbf{\textcolor{red}{31.7}} &34.1  &\textbf{27.3}  & 34.3&\textbf{28.1}& 181.64s\\ 
          \hline
     \end{tabular*}
 \end{table*}
