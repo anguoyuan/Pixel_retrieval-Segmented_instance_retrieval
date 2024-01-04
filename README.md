@@ -3,6 +3,7 @@
 </div>
 
 
+
 # Official Release: Pixel Retrieval Benchmarks PRoxford and PRparis 
 
 We are pleased to announce the official release of the pixel retrieval benchmarks PRoxford and PRparis. These benchmarks are introduced in our ICCV 23 paper, "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris."
@@ -63,8 +64,45 @@ Your directory structure should be as follows:
 
 
 ### updated testbed
+
+We add the query overhead of some representative methods for pixel retrieval per 100 image pairs. 
+
+Upon meticulous review of the evaluation process, we discovered that there was an error in the outcome of the spatial verification; the results of the other methods are correct. Specifically, the format for the boundary point coordinates should be in the order of (width, height), not (height, width). We updated the testbed below. Notably, when using DELF or DELG features, spatial verification demonstrates highly accurate pixel retrieval results.
+
+![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/6e339cc8-4326-4c55-8871-ac9a50d9c6d6)
+
+
+![image](https://github.com/anguoyuan/Pixel_retrieval-Segmented_instance_retrieval/assets/91877920/8cbe6a1b-8e19-49db-af62-c32e82be69db)
+
+
 <details>
-<summary>Click to expand LaTeX code</summary>
+<summary>Click to expand LaTeX code for the testbed</summary>
+
+\begin{table*}[hbt]
+    \caption{Results of pixel retrieval from database (\% mean of mAP@50:5:95) on the PROxf/PRPar datasets and their large-scale versions PROxf+1M/PRPar+1M, with both Medium (M) and Hard (H) evaluation protocols. \textbf{\textcolor{red}{Red}} indicates the best performance and \textbf{Bold} indicates the second best performance.  }
+    \label{tab:pixel-map}
+    \centering
+    \small
+    %\begin{tabular}{|c| c | c| c| c| c| c| c| c| c| }
+    \setlength{\tabcolsep}{0pt}
+    %\begin{tabular}{|c| c| c| c| c| c| c| c| c| }
+    %\begin{tabularx}{\textwidth}{@{}l *{8}{X|}@{}}
+    %\begin{tabular*}{\textwidth}{|c|@{\extracolsep{\fill}}c|c|c|c|c|c|c|c|}
+    \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+    \begin{tabular*}{\textwidth}{|C{0.102\textwidth}|C{0.27\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0655\textwidth}|C{0.0955\textwidth}|}
+    \hline
+    \multicolumn{2}{|c|}{\multirow{2}{*}{}} & \multicolumn{2}{c|}{PROxf} & \multicolumn{2}{c|}{PROxf+R1M} & \multicolumn{2}{c|}{PRPar} & \multicolumn{2}{c|}{PRPar+R1M} &\cellcolor{green}  \\ \cline{1-10}
+         \multicolumn{2}{|l|}{}& M & H & M & H & M & H & M & H&\cellcolor{green}   \\ \cline{1-10}\cline{1-10}
+        \multicolumn{10}{|c|}{  Image retrieval: DELG initial ranking~\cite{cao2020unifying} + HD reranking~\cite{an2021hypergraph}}&\multirow{-3}{*}{\cellcolor{green} \parbox{0.08\textwidth}{Overhead per 100 pairs}} \\ \hline
+        \multirow{6}{*}{ \makecell[c]{Pixel \\retrieval \\methods}}& DELG + SP~\cite{cao2020unifying} &\textbf{\textcolor{red}{39.6}}  &30.5  &\textbf{\textcolor{red}{36.0}} &28.2 &34.8  &20.2  &34.7 &19.5&41.22s  \\
+         &D2R+Faster-RCNN+ASMK~\cite{teichmann2019detect} &30.1  &23.5 &30.5 &22.0 &26.3  &25.3  &25.7 &24.9& 0.11 s\\
+         &OWL-VIT~\cite{minderer2022simple}  &12.3  &6.6 &12.1 &13.6 &7.9  & 7.6 &7.9 &7.8& 296.21s \\
+         &SSP~\cite{fan2022ssp}  & \textbf{33.0} &29.7  &\textbf{35.7} &30.5 & \textbf{\textcolor{red}{46.4}} &\textbf{37.2}  &\textbf{\textcolor{red}{45.6}} &\textbf{37.2} & 62.33 s\\
+         &WarpCGLUNet~\cite{truong2021warp}  & 31.2 &\textbf{32.6}  &31.5 &\textbf{31.7} &34.1  &27.3  & 34.3&28.1& 181.64s\\ 
+         \hline
+    \end{tabular*}
+\end{table*}
+   
 \begin{table*}[htp]
     \caption{Results of pixel retrieval from ground truth query-index image pairs (\% mean of mIoU) on the PROxf/PRPar datasets with both Medium and Hard evaluation protocols. D and S indicate detection and segmentation results respectively. \textbf{Bold} number indicates the best performance, and \underline{underline} indicates the second one.  
     }
@@ -118,9 +156,7 @@ Your directory structure should be as follows:
     WarpC-GLUNet-Geometric (megadepth)~\cite{truong2021warp} & 31.3 & 25.4 & 36.6 & 27.3 & 21.9 & 15.8& 26.4 & 17.3&25.25 \\
     GLUNet-Semantic~\cite{truong2020glu} & 18.5 & 14.4 & 22.4 & 15.6 & 8.7 & 5.6 & 12.8 & 7.8&13.22 \\
     WarpC-GLUNet-Semantic~\cite{truong2021warp} & 27.5 & 21.4 & 36.8 & 25.7 & 18.5 & 11.9 & 28.3 & 17.6&23.46 \\
-    
      \hline
-
     \end{tabular}
 \end{table*}
 
