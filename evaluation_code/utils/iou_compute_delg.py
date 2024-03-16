@@ -59,15 +59,15 @@ def compute_iou(test_points, gt_points, image=None, type='bbox'):
 
     if type == 'bbox':
 
-        test_x_min = test_points[:, 0].min()
-        test_x_max = test_points[:, 0].max()
-        test_y_min = test_points[:, 1].min()
-        test_y_max = test_points[:, 1].max()
+        # test_x_min = test_points[:, 0].min()
+        # test_x_max = test_points[:, 0].max()
+        # test_y_min = test_points[:, 1].min()
+        # test_y_max = test_points[:, 1].max()
 
-        # test_x_min = test_points[:, 1].min()
-        # test_x_max = test_points[:, 1].max()
-        # test_y_min = test_points[:, 0].min()
-        # test_y_max = test_points[:, 0].max()
+        test_x_min = test_points[:, 1].min()
+        test_x_max = test_points[:, 1].max()
+        test_y_min = test_points[:, 0].min()
+        test_y_max = test_points[:, 0].max()
         test_mask[test_y_min:test_y_max+1, test_x_min:test_x_max+1] = 1.
 
         gt_x_min = all_gt_points[:, 0].min()
@@ -93,11 +93,11 @@ def compute_iou(test_points, gt_points, image=None, type='bbox'):
     elif type == 'segmentation':
 
         
-        # test_x = test_points[:, 1]
-        # test_y = test_points[:, 0]
+        test_x = test_points[:, 1]
+        test_y = test_points[:, 0]
                 
-        test_x = test_points[:, 0]
-        test_y = test_points[:, 1]
+        # test_x = test_points[:, 0]
+        # test_y = test_points[:, 1]
 
         test_contour = np.array([[xii, yii] for xii, yii in zip(test_x.astype(int), test_y.astype(int))])
         cv2.fillPoly(test_mask, pts=[test_contour], color=(255, 255, 255))
