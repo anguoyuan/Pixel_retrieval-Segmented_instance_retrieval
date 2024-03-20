@@ -12,14 +12,11 @@ from utils.iou_compute import compute_iou
 
 USING_EXISTING_IOUS=False #if True, use the existing ious, if False, compute the ious
 Result_dir='../results/'
-#Result_dir='/mnt/ssd1/guoyuan/ICCV_release/results'
 GND_folder='../pixel_retrieval_benchmarks/'
-#GND_folder='/mnt/ssd1/guoyuan/ICCV_release/pixel_retrieval_benchmarks'
 
 
 #change the method list here
-method_list=['example_sift_sp', 'delf_sp']
-#method_list=['delg_sp']
+method_list=['example_sift_sp']
 
 for dataset in ['proxford','prparis']:
     for method in method_list:
