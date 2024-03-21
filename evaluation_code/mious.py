@@ -121,7 +121,7 @@ for dataset in ['proxford','prparis']:
             medium_seg_mious.append(np.mean(q_medium_seg_ious))
             hard_bbox_mious.append(np.mean(q_hard_bbox_ious))
             hard_seg_mious.append(np.mean(q_hard_seg_ious))
-            print(dataset,'query ', q, 'results are: ',np.mean(q_medium_bbox_ious),np.mean(q_medium_seg_ious), np.mean(q_hard_bbox_ious),np.mean(q_hard_seg_ious))
+            # print(dataset,'query ', q, 'results are: ',np.mean(q_medium_bbox_ious),np.mean(q_medium_seg_ious), np.mean(q_hard_bbox_ious),np.mean(q_hard_seg_ious))
 
         medium_bbox_mmiou=np.mean(medium_bbox_mious)
         medium_seg_mmiou=np.mean(medium_seg_mious)
@@ -132,6 +132,13 @@ for dataset in ['proxford','prparis']:
         print('medium_seg_mmiou is: ',medium_seg_mmiou )
         print('hard_bbox_mmiou is: ',hard_bbox_mmiou )
         print('hard_seg_mmiou is: ',hard_seg_mmiou )
+
+        with open(os.path.join(Result_dir, 'pixel-level', method, 'numerical_results.txt'), 'w') as f:
+            f.write(f"{method} {dataset}\n")
+            f.write(f"medium_bbox_mmiou is: {medium_bbox_mmiou}\n")
+            f.write(f"medium_seg_mmiou is: {medium_seg_mmiou}\n")
+            f.write(f"hard_bbox_mmiou is: {hard_bbox_mmiou}\n")
+            f.write(f"hard_seg_mmiou is: {hard_seg_mmiou}\n")
 
         result={'mmiou':[medium_bbox_mmiou,medium_seg_mmiou,hard_bbox_mmiou,hard_seg_mmiou],
         'mious':[medium_bbox_mious,medium_seg_mious,hard_bbox_mious,hard_seg_mious],
